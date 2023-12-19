@@ -6,6 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+// pages
 import Home from './pages/home';
 import Html from './pages/html';
 import Css from './pages/css';
