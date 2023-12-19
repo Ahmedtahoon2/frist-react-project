@@ -1,13 +1,17 @@
+import { Link, NavLink } from "react-router-dom";
+
 const Header = () => {
     return (
         <>
             <header className="hide-when-mobile">
-                <h1>Courses 4 Arab</h1>
+                <h1>
+                    <Link to="/">Courses 4 Arab</Link>
+                </h1>
                 <ul className="flex">
                     <li className="main-list">
-                        <a className="main-link" href="/html">
+                        <NavLink className="main-link" to="/html">
                             HTML
-                        </a>
+                        </NavLink>
                         {/* <ul className="sub-ul">
                             <li>
                                 <a href="">Full Course</a>
@@ -21,9 +25,9 @@ const Header = () => {
                         </ul> */}
                     </li>
                     <li className="main-list">
-                        <a className="main-link" href="/css">
+                        <NavLink className="main-link" to="/css">
                             CSS
-                        </a>
+                        </NavLink>
                         {/* <ul className="sub-ul">
                             <li>
                                 <a href="">Full Course</a>
@@ -48,9 +52,9 @@ const Header = () => {
                         </ul> */}
                     </li>
                     <li className="main-list">
-                        <a className="main-link" href="/javaScript">
+                        <NavLink className="main-link" to="/javaScript">
                             JavaScript
-                        </a>
+                        </NavLink>
                         {/* <ul className="sub-ul sub-of-js">
                             <li>
                                 <a href="">coming soon🔥</a>
