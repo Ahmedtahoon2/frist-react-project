@@ -1,13 +1,12 @@
 import Header from "../components/header";
+import MainContent from "../components/mainContent";
 import Footer from "../components/footer";
 
 const Css = () => {
   return (
       <>
           <Header />
-          <main>
-            Css Page
-          </main>
+          <MainContent pageData="Css Page"/>
           <Footer />
       </>
   );
