@@ -67,7 +67,8 @@
   -o-transition: 0.3s;
 }
 
-.main-link.active {
+.main-link.active,
+.main-label.active {
   color: cyan;
 }
 

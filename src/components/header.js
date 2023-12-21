@@ -75,7 +75,9 @@ const Header = () => {
                 <div className="show-on-click">
                     <div className="main-div">
                         <label htmlFor="html">
-                            <NavLink to="/html">HTML</NavLink>
+                            <NavLink className="main-label" to="/html">
+                                HTML
+                            </NavLink>
                             <i className="fas fa-plus" />
                         </label>
                         <input id="html" type="checkbox" />
@@ -93,7 +95,9 @@ const Header = () => {
                     </div>
                     <div className="main-div">
                         <label htmlFor="css">
-                            <NavLink to="/css">CSS</NavLink>
+                            <NavLink className="main-label" to="/css">
+                                CSS
+                            </NavLink>
                             <i className="fas fa-plus" />
                         </label>
                         <input id="css" type="checkbox" />
@@ -125,7 +129,7 @@ const Header = () => {
                     </div>
                     <div className="main-div">
                         <label htmlFor="js">
-                            <NavLink className="main-link" to="/html">
+                            <NavLink className="main-label" to="/javaScript">
                                 JavaScript
                             </NavLink>
                             <i className="fas fa-plus" />
