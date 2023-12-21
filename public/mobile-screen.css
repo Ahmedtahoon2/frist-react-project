@@ -1,13 +1,7 @@
-.show-when-mobile {
-  display: block;
-}
 
-.hide-when-mobile {
-  display: none;
-}
 
 /* ====================================
-    1. Font Awesom hamburger menu
+    1. Font Awesome hamburger menu
 ======================================= */
 .absolute {
   position: absolute;

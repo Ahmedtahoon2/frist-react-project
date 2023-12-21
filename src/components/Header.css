@@ -1,0 +1,127 @@
+/* =============
+  table of contents
+===============
+
+/*
+  0. default header styles 
+    0.1 header of mobile
+  1. ul class .flex
+    1.1 sub HTML + css + JavaScript
+    1.2 sub sub of CSS
+*/
+
+/* ===============
+  0. default header styles 
+================ */
+
+.hide-when-mobile {
+  display: flex;
+  justify-content: space-around;
+}
+
+.show-when-mobile {
+  display: none;
+}
+
+/* ===============
+  0.1 header of mobile
+================ */
+
+@media (max-width: 800px) {
+  .show-when-mobile {
+    display: block;
+  }
+  
+  .hide-when-mobile {
+    display: none;
+  }
+}
+
+/* ===============
+  2.  ul class .flex
+================ */
+
+.flex {
+  display: flex;
+}
+
+.main-list {
+  padding: 20px;
+  font-size: 19px;
+  position: relative;
+}
+
+.main-link {
+  padding: 8px 15px;
+}
+
+.main-link:hover {
+  color: cyan;
+  box-shadow: 0 0 5px cyan;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.main-link.active {
+  color: cyan;
+}
+
+/* =======================================
+  1.1 sub HTML + css + JavaScript
+======================================== */
+
+.sub-ul {
+    display: none;
+    position: absolute;
+    top: 69px;
+    left: -15px;
+    border-top: 1px solid cyan;
+    background-color: #1b1b1b;
+    border-radius: 5px;
+    padding: 5px;
+    width: 155px;
+}
+
+.sub-of-js {
+    left: 10px;
+}
+
+.sub-ul li {
+    padding: 8px 0;
+    font-size: 17px;
+    border-bottom: 1px solid black;
+}
+
+.sub-ul li a:hover {
+    color: cyan;
+    font-weight: bold;
+}
+
+.main-list:hover .sub-ul {
+    display: block;
+}
+
+/* =======================================
+  1.2 sub sub of CSS
+======================================== */
+
+.sub-sub-ul {
+    position: absolute;
+    top: 80px;
+    left: 153px;
+    border-top: 1px solid cyan;
+    background-color: #1b1b1b;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+    display: none;
+}
+
+.mini-projects:hover .sub-sub-ul {
+    display: block;
+}
